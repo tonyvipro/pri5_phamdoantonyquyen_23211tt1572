@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaleHub - Fashion & Clothing Shopify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <a href="#" class="logo-link">
+                    <img src="images/logo_350x.png" alt="SaleHub Logo" id="brand-logo" class="header-logo">
+                </a>
+            </div>
+            <div class="header-right-content">
+                <div class="header-top-row">
+                    <div class="header-announcement">
+                        <svg class="announcement-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="1" y="3" width="15" height="13"></rect>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                        <span>FREE SHIPPING FOR ORDER ABOVE $200. SHOP NOW !</span>
+                    </div>
+
+                    <div class="header-top-actions">
+                        <button class="action-btn search-trigger" id="search-btn" aria-label="Search site">
+                            <svg class="action-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <span class="action-text">Search</span>
+                        </button>
+                        <a href="#" class="action-btn account-link" aria-label="My Account">
+                            <span class="action-text">Account</span>
+                        </a>
+                        <button class="action-btn cart-trigger" id="cart-btn" aria-label="View Cart">
+                            <div class="cart-icon-wrapper">
+                                <svg class="action-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M6 6h12v12a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V6z"></path>
+                                    <path d="M9 6V5a3 3 0 0 1 6 0v1"></path>
+                                </svg>
+                                <span class="cart-label-text">My Cart</span>
+                                <span class="cart-count" id="cart-counter">0</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <nav class="desktop-navigation" aria-label="Main Navigation">
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link">DENIM JACKET</a></li>
+                        <li><a href="#" class="nav-link">WINTER COATS</a></li>
+                        <li><a href="#" class="nav-link">CARDIGANS</a></li>
+                        <li><a href="#" class="nav-link">BLAZERS</a></li>
+                        <li><a href="#" class="nav-link">SWEATER DRESSES</a></li>
+                        <li><a href="#" class="nav-link">DENIM SHORTS</a></li>
+                        <li><a href="#" class="nav-link">T-SHIRTS</a></li>
+                        <li><a href="#" class="nav-link">ACCESSORIES</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="mobile-menu-toggle" id="menu-toggle-btn" aria-label="Open navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="header-search-bar" id="dropdown-search">
+            <div class="search-inner">
+                <form action="#" method="get" class="search-form">
+                    <input type="text" placeholder="Search for products, collections..." aria-label="Search input">
+                    <button type="submit" aria-label="Submit search"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <button class="search-close" id="search-close-btn" aria-label="Close search"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-drawer" id="mobile-menu-drawer">
+        <div class="drawer-header">
+            <h3>Menu</h3>
+            <button class="drawer-close" id="drawer-close-btn" aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <nav class="mobile-navigation" aria-label="Mobile Navigation">
+            <ul class="mobile-nav-list">
+                <li><a href="#" class="mobile-nav-link">Denim jacket</a></li>
+                <li><a href="#" class="mobile-nav-link">Winter coats</a></li>
+                <li><a href="#" class="mobile-nav-link">Cardigans</a></li>
+                <li><a href="#" class="mobile-nav-link">Blazers</a></li>
+                <li><a href="#" class="mobile-nav-link">Sweater Dresses</a></li>
+                <li><a href="#" class="mobile-nav-link">Denim Shorts</a></li>
+                <li><a href="#" class="mobile-nav-link">T-Shirts</a></li>
+                <li><a href="#" class="mobile-nav-link">Accessories</a></li>
+                <li>
+                    <hr class="drawer-divider">
+                </li>
+                <li><a href="#" class="mobile-nav-link"><i class="fa-regular fa-user"></i> Log in</a></li>
+                <li><a href="#" class="mobile-nav-link"><i class="fa-regular fa-heart"></i> Wishlist</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="drawer-overlay" id="menu-drawer-overlay"></div>
+
+    <main id="main-content">
+
+        <section class="features-bar" aria-label="Store features">
+            <div class="container features-grid">
+                <div class="feature-item" id="feature-return">
+                    <div class="feature-icon"><i class="fa-solid fa-rotate-left"></i></div>
+                    <div class="feature-content">
+                        <h3>30 Days Return</h3>
+                        <p>Simply return it within 30 days for an exchange.</p>
+                    </div>
+                </div>
+                <div class="feature-item" id="feature-delivery">
+                    <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <div class="feature-content">
+                        <h3>FREE US DELIVERY</h3>
+                        <p>On orders over $200!</p>
+                    </div>
+                </div>
+                <div class="feature-item" id="feature-support">
+                    <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                    <div class="feature-content">
+                        <h3>Support 24/7</h3>
+                        <p>Contact us 24 hours a day, 7 days a week</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero-slider desktop-hero" aria-label="Featured Collection Banner">
+            <div class="hero-split-slide">
+                <div class="hero-col hero-left" style="background-image: url('images/bn_6_1512x.jpg');">
+                    <div class="hero-col-content">
+                        <span class="hero-sub">Top autumn trending 2021</span>
+                        <h1 class="hero-title">De nim Collection</h1>
+                        <p class="hero-desc">Discover the collection of denim - Shop top designers and SaleHub design!
+                            Get personalised size recommendations with SaleHub fit assistant</p>
+                        <a href="#" class="btn-underline">View all Collection</a>
+                    </div>
+                </div>
+                <div class="hero-col hero-right">
+                    <div class="hero-product-preview">
+                        <div class="product-hanger-img">
+                            <img src="images/1_e2a5c399-1b7e-494f-a47a-2c1cc9777494_380x481_crop_center.webp"
+                                alt="Eco Aware organic cotton top">
+                        </div>
+                        <div class="product-preview-info">
+                            <h3>Eco Aware organic cotton top</h3>
+                            <p class="price">$39.00</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section class="hero-slider mobile-hero" aria-label="Featured Collection Mobile Banner">
+            <div class="mobile-slide-image"
+                style="background-image: url('images/slideshow-2_2fab53c9-6055-4722-bdcd-726f1eedc34d_1512x.webp');">
+                <div class="mobile-hero-overlay-text">
+                    <span class="hero-sub">Top autumn trending 2021</span>
+                    <h1 class="hero-title">Denim Collection</h1>
+                </div>
+            </div>
+            <div class="mobile-slide-details">
+                <div class="mobile-product-card">
+                    <div class="mobile-card-img">
+                        <img src="images/slideshow-5_540x.jpg" alt="Sherpa denim jacket">
+                    </div>
+                    <div class="mobile-card-info">
+                        <h3>Sherpa denim jacket</h3>
+                        <p class="price">$94.00</p>
+                        <button class="btn btn-dark add-to-cart-action" data-name="Sherpa denim jacket"
+                            data-price="94.00">Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-dots-mobile">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+        <section class="denim-carousel-section">
+            <div class="container section-split">
+                <div class="section-title-col">
+                    <h2 class="section-heading">DENIM COLLECTION</h2>
+                    <p class="section-subtext">Discover the collection of denim - Shop top designers and SaleHub design!
+                        Get personalised size recommendations with SaleHub fit assistant</p>
+                    <a href="#" class="btn-underline-dark">View all Collection</a>
+                </div>
+                <div class="section-slider-col">
+                    <div class="product-cards-slider">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="images/1_8c2e787e-2a57-4eed-b20d-572e8a40bf35_720x.jpg"
+                                    alt="Eco Aware organic cotton top" class="primary-img">
+
+                            </div>
+                            <div class="product-card-details">
+                                <h3 class="product-title"><a href="#">Eco Aware organic cotton top</a></h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="product-price"><span class="price-current">$39.00</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="images/1_35559729-bb4f-477a-afbb-d695451b9719_540x.jpg"
+                                    alt="Basic sweat joggers" class="primary-img">
+
+                            </div>
+                            <div class="product-card-details">
+                                <h3 class="product-title"><a href="#">Basic sweat joggers</a></h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="product-price"><span class="price-current">$11.00</span> <span
+                                        class="price-old">$13.00</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="images/1_5ace9120-ca0c-4bb4-a23d-6e8eac424cee_720x.jpg"
+                                    alt="Embossed knit cardigan" class="primary-img">
+
+                            </div>
+                            <div class="product-card-details">
+                                <h3 class="product-title"><a href="#">Embossed knit cardigan</a></h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="product-price"><span class="price-current">$18.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-product-banner">
+            <div class="container banner-grid">
+                <div class="banner-text-side">
+                    <span class="badge">FREATURED PRODUCT</span>
+                    <h2 class="banner-title">Every Cloud Intarsia Knit Jumper</h2>
+                    <p class="banner-description">
+                        Nothing but blue skies ahead! Do you know your cumulus from your cirrus? Let’s go cloudspotting
+                        in Every, our comfy, cool 100% cotton cloud intarsia motif jumper with a knitted bright blue sky
+                        and little fluffy clouds, cast in a classic fit shape with a crew neckline and rib detail hem
+                        and cuffs.
+                    </p>
+                    <button class="btn btn-dark btn-lg add-to-cart-action" data-name="Every Cloud Intarsia Knit Jumper"
+                        data-price="85.00">Buy Now</button>
+                </div>
+                <div class="banner-visual-side">
+                    <div class="image-offset-stack">
+                        <div class="stack-card stack-back">
+                            <img src="images/feature_3_375x500_crop_center.jpg" alt="Knit Jumper side view">
+                        </div>
+                        <div class="stack-card stack-mid">
+                            <img src="images/feature_2_420x560_crop_center.jpg" alt="Knit Jumper model wear">
+                        </div>
+                        <div class="stack-card stack-front">
+                            <img src="images/feature_1_330x441_crop_center.jpg" alt="Knit Jumper flat view">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="double-banners">
+            <div class="banner-half banner-half-left">
+                <div class="banner-bg"
+                    style="background-image: url('images/bn-1_52a4ba95-a367-41d7-983b-d0995c332815_1512x.webp');"></div>
+                <div class="banner-half-content">
+                    <div class="half-title-wrapper title-left-line">
+                        <span class="half-line"></span>
+                        <h3 class="half-title">Women's <br>Denim mini dress</h3>
+                    </div>
+                    <p>Does it get any more summertime than a classic summer dress? This wardrobe icon has earned its
+                        rightful place on our list of sunshine must-haves for a good reason</p>
+                    <a href="#" class="view-more-link">VIEW MORE</a>
+                </div>
+            </div>
+            <div class="banner-half banner-half-right">
+                <div class="banner-half-content">
+                    <div class="half-title-wrapper title-right-line">
+                        <h3 class="half-title">Handbag <br>with a chain</h3>
+                        <span class="half-line"></span>
+                    </div>
+                    <p>Shop the 27 best chain handbags for fall at a range of prices so wide we're guaranteeing there's
+                        something for everyone</p>
+                    <a href="#" class="view-more-link">VIEW MORE</a>
+                </div>
+                <div class="banner-bg"
+                    style="background-image: url('images/bn-2_10be06eb-d4b1-4259-88a3-473a1127f86e_1512x.webp');"></div>
+            </div>
+        </section>
+        <section class="mission-section">
+            <div class="container text-center">
+                <span class="mission-label">OUR MISSION</span>
+                <blockquote class="mission-quote">
+                    “Being perfectly well-dressed gives one a tranquillity that no religion can bestow”
+                </blockquote>
+                <p class="mission-paragraph">
+                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE
+                    ET DOLORE MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE ULTRICES GRAVIDA. RISUS COMMODO VIVERRA MAECENAS
+                    ACCUMSAN
+                </p>
+            </div>
+        </section>
+        <section class="for-him-section">
+            <div class="container">
+                <div class="for-him-header">
+                    <div class="him-tabs" role="tablist">
+                        <button class="tab-btn active" data-filter="outerwear" role="tab"
+                            aria-selected="true">OUTERWEAR</button>
+                        <button class="tab-btn" data-filter="sweaters" role="tab"
+                            aria-selected="false">SWEATERS</button>
+                        <button class="tab-btn" data-filter="jackets" role="tab" aria-selected="false">JACKETS</button>
+                        <button class="tab-btn" data-filter="trousers" role="tab"
+                            aria-selected="false">TROUSERS</button>
+                        <button class="tab-btn" data-filter="tshirts" role="tab" aria-selected="false">T-SHIRTS</button>
+                    </div>
+
+                    <h2 class="section-title-him">FOR HIM</h2>
+                    <div class="him-view-all">
+                        <span class="view-all-line"></span>
+                        <a href="#" class="view-all-link">VIEW ALL COLLECTION</a>
+                    </div>
+                </div>
+
+                <div class="him-grid" id="product-him-grid">
+                    <div class="him-product-card" data-category="outerwear">
+                        <div class="him-img-wrapper">
+                            <img src="images/1_fb07f6fc-f4bb-46a9-966d-1a0b66e6960a_540x.jpg"
+                                alt="Classic one-breasted jacket">
+                        </div>
+                        <div class="him-info">
+                            <h3>Classic one-breasted jacket</h3>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p class="price">$21.00</p>
+                        </div>
+                    </div>
+
+                    <div class="him-product-card" data-category="jackets">
+                        <div class="him-img-wrapper">
+                            <img src="images/1_afb70b63-ea30-4380-b7d3-8e5e765569aa_540x.jpg" alt="Black Denim Jacket">
+                        </div>
+                        <div class="him-info">
+                            <h3>Black Denim Jacket</h3>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p class="price">$85.00</p>
+                        </div>
+                    </div>
+                    <div class="him-product-card" data-category="tshirts">
+                        <div class="him-img-wrapper">
+                            <img src="images/1_e6fe8d6a-e054-4a68-ae4c-84dfb4f66d48_540x.jpg" alt="T-shirt with slogan">
+                        </div>
+                        <div class="him-info">
+                            <h3>T-shirt with slogan</h3>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="price">$104.00</p>
+                        </div>
+                    </div>
+                    <div class="him-product-card" data-category="outerwear">
+                        <div class="him-img-wrapper">
+                            <img src="images/1_d0fab98a-800a-4656-ad83-a1ad17efc924_540x.jpg" alt="Blended wool coat">
+                        </div>
+                        <div class="him-info">
+                            <h3>Blended wool coat</h3>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="price">$14.00</p>
+                        </div>
+                    </div>
+                    <div class="him-product-card" data-category="jackets">
+                        <div class="him-img-wrapper">
+                            <img src="images/1_423afc51-89a7-412d-b94e-1905f35af736_540x.jpg" alt="Black Bomber Jacket">
+                        </div>
+                        <div class="him-info">
+                            <h3>Black Bomber Jacket</h3>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="price">$16.00</p>
+                        </div>
+                    </div>
+                    <div class="him-product-card" data-category="sweaters">
+                        <div class="him-img-wrapper">
+                            <img src="images/1_225b9840-5824-4a66-801e-fa5640519db5_540x.jpg"
+                                alt="Lightweight bomber jacket">
+                        </div>
+                        <div class="him-info">
+                            <h3>Lightweight bomber jacket</h3>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="price">$74.00</p>
+                        </div>
+                    </div>
+                    <div class="him-product-card" data-category="jackets">
+                        <div class="him-img-wrapper">
+                            <img src="images/1_96a01a8d-3536-48d8-83ec-6279e0ee6f8e_540x.jpg"
+                                alt="Transition jacket with hood">
+                        </div>
+                        <div class="him-info">
+                            <h3>Transition jacket with hood</h3>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p class="price">$113.00</p>
+                        </div>
+                    </div>
+
+                    <div class="him-product-card" data-category="tshirts">
+                        <div class="him-img-wrapper">
+                            <img src="images/1_34ccf0b4-eca9-4653-9154-f1d88213386f_540x.jpg"
+                                alt="Classic shirt with pocket">
+                        </div>
+                        <div class="him-info">
+                            <h3>Classic shirt with pocket</h3>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="price">$36.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials-section">
+            <div class="container text-center">
+                <h2 class="review-heading">FROM OUR CUSTOMERS</h2>
+                <div class="customer-rating-top">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="customer-avatar">
+                            <img src="images/av-1_80x.png" alt="Customer Profile">
+                        </div>
+                        <span class="customer-name">Christina M. / From Canada</span>
+                        <p class="review-text">
+                            Best purchase I’ve made this winter! The color and knitting are exquisite and it’s so comfy!
+                            Went from NYC to Miami without ever taking it off. Super cute!!
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top-row">
+                <div class="footer-brand-info">
+                    <h2 class="footer-brand">Salehub</h2>
+                    <div class="footer-contact-info">
+                        <p class="phone-line">We’re available by phone <span class="phone-number">+123-456-789</span>
+                        </p>
+                        <p class="email-line"><a href="mailto:info@example.com">info@example.com</a></p>
+                        <p class="hours-line">Monday till Friday 10 to 6 EST</p>
+                    </div>
+                </div>
+
+                <div class="footer-social-section">
+                    <h3 class="social-header">GET MORE RESERVED ON:</h3>
+                    <div class="social-links-bare">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-middle-grid">
+                <div class="footer-menu-col">
+                    <h3 class="footer-title">About Us</h3>
+                    <ul class="footer-col-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Factories</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu-col">
+                    <h3 class="footer-title">Orders and Returns</h3>
+                    <ul class="footer-col-links">
+                        <li><a href="#">Help and advice</a></li>
+                        <li><a href="#">Shippintg & Returns</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu-col">
+                    <h3 class="footer-title">My Account</h3>
+                    <ul class="footer-col-links">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">Check Out</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter-col">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="newsletter-description">Receive our weekly newsletter. For dietary content, fashion
+                        insider and the best offers.</p>
+                    <form action="#" method="post" class="newsletter-block-form">
+                        <input type="email" placeholder="Email address" required
+                            aria-label="Email address for newsletter" class="newsletter-input-box">
+                        <button type="submit" class="newsletter-submit-btn">SIGN ME UP</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p class="copyright-text"> 21211tt1572_phamdoantonyquyen</p>
+
+                <div class="payment-cards-row">
+                    <span class="payment-card-badge" title="American Express">
+                        <svg viewBox="0 0 38 24" width="38" height="24">
+                            <rect width="38" height="24" fill="#007bc1" rx="2" />
+                            <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#fff"
+                                font-family="sans-serif" font-size="7" font-weight="900">AMEX</text>
+                        </svg>
+                    </span>
+                    <span class="payment-card-badge" title="Mastercard">
+                        <svg viewBox="0 0 38 24" width="38" height="24">
+                            <rect width="38" height="24" fill="#222" rx="2" />
+                            <circle cx="15.5" cy="12" r="6.5" fill="#eb001b" />
+                            <circle cx="22.5" cy="12" r="6.5" fill="#ff5f00" fill-opacity="0.8" />
+                        </svg>
+                    </span>
+                    <span class="payment-card-badge" title="Visa">
+                        <svg viewBox="0 0 38 24" width="38" height="24">
+                            <rect width="38" height="24" fill="#fff" rx="2" stroke="#eaeaea" stroke-width="1" />
+                            <path
+                                d="M12 15.5l1.6-6.5h2.5L14.5 15.5H12zm9.1-6.1c-.3-.3-.9-.4-1.5-.4-1.7 0-2.8.9-2.8 2.1 0 1 .9 1.5 1.6 1.8.7.3.9.5.9.8 0 .4-.5.6-1 .6-.6 0-1.1-.2-1.5-.4l-.2-1-.1.1-1.3.5c.2.6.8 1.1 1.8 1.1 1.7 0 2.8-.8 2.8-2 0-1.2-.9-1.6-1.8-2-.7-.3-1.1-.5-1.1-.9 0-.3.4-.6.9-.6.5 0 .9.1 1.2.3l.1.1.2-1.1c.1 0-.3-.3-1-.3zm5.7-.4h-1.9c-.6 0-1 .3-1.2.8L15 15.5h2.6l.5-1.4h3.1l.3 1.4h2.3l-1.9-6.5zm-2.2 4.1l.8-2.2.4 2.2h-1.2zm-16.7-4.1l2.4 4.5.3-1.2c-.3-.9-.8-1.9-.8-1.9s.4-.1.8-.1h2.5L10 15.5H7.4L5.6 9.4H4v-.4h3.9z"
+                                fill="#1a1f71" />
+                        </svg>
+                    </span>
+                    <span class="payment-card-badge" title="Paypal">
+                        <svg viewBox="0 0 38 24" width="38" height="24">
+                            <rect width="38" height="24" fill="#fff" rx="2" stroke="#eaeaea" stroke-width="1" />
+                            <path
+                                d="M12 8.5h4c2.5 0 3.5 1 3.5 2.5s-1.5 2.5-3.5 2.5h-2l-.8 3.5H11l1-7.5zm2.8 3.5h1.2c1.2 0 1.7-.5 1.7-1.2s-.5-1.3-1.7-1.3h-1l-.2 2.5z"
+                                fill="#003087" />
+                            <path
+                                d="M14 10.5h4c2.5 0 3.5 1 3.5 2.5s-1.5 2.5-3.5 2.5h-2l-.8 3.5h-2.2l1-7.5zm2.8 3.5h1.2c1.2 0 1.7-.5 1.7-1.2s-.5-1.3-1.7-1.3h-1l-.2 2.5z"
+                                fill="#0079c1" opacity="0.8" />
+                        </svg>
+                    </span>
+                    <span class="payment-card-badge" title="DBS">
+                        <svg viewBox="0 0 38 24" width="38" height="24">
+                            <rect width="38" height="24" fill="#fff" rx="2" stroke="#eaeaea" stroke-width="1" />
+                            <text x="13" y="15" fill="#000" font-family="sans-serif" font-size="9" font-weight="900"
+                                letter-spacing="-0.5">DBS</text>
+                            <path d="M26 12l2.5-2.5 2.5 2.5-2.5 2.5z" fill="#ff0000" />
+                            <path d="M28.5 9.5l2.5 2.5-2.5 2.5L26 12z" fill="#ff5c5c" opacity="0.8" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="footer-right-actions">
+                    <div class="currency-dropdown-wrapper">
+                        <label for="currency-select">Choose Currency : </label>
+                        <select id="currency-select" class="currency-select-box">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="VND">VND</option>
+                        </select>
+                    </div>
+                    <button class="back-to-top-btn" id="scroll-to-top" aria-label="Scroll to top">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="cart-toast" id="cart-toast-alert">
+        <div class="toast-content">
+            <span class="toast-icon"><i class="fa-solid fa-circle-check"></i></span>
+            <div class="toast-text">
+                <span class="toast-title">Added to bag!</span>
+                <span class="toast-desc" id="toast-product-name">Product Name</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
