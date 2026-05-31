@@ -20,6 +20,15 @@
                     <img src="images/logo_350x.png" alt="SaleHub Logo" id="brand-logo" class="header-logo">
                 </a>
             </div>
+            
+            <!-- Mobile Search Bar (Only visible on mobile) -->
+            <form action="#" method="get" class="mobile-header-search">
+                <input type="text" placeholder="What are you looking for ?" aria-label="Search">
+                <button type="submit" aria-label="Submit search">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+            </form>
+
             <div class="header-right-content">
                 <div class="header-top-row">
                     <div class="header-announcement">
@@ -179,12 +188,13 @@
         <section class="hero-slider mobile-hero" aria-label="Featured Collection Mobile Banner">
             <div class="mobile-slide-image"
                 style="background-image: url('images/slideshow-2_2fab53c9-6055-4722-bdcd-726f1eedc34d_1512x.webp');">
-                <div class="mobile-hero-overlay-text">
-                    <span class="hero-sub">Top autumn trending 2021</span>
-                    <h1 class="hero-title">Denim Collection</h1>
-                </div>
+            </div>
+            <div class="slider-dots-mobile">
+                <span class="dot active"></span>
+                <span class="dot"></span>
             </div>
             <div class="mobile-slide-details">
+                <h2 class="mobile-slide-title">De nim Collection</h2>
                 <div class="mobile-product-card">
                     <div class="mobile-card-img">
                         <img src="images/slideshow-5_540x.jpg" alt="Sherpa denim jacket">
@@ -196,10 +206,6 @@
                             data-price="94.00">Buy now</button>
                     </div>
                 </div>
-            </div>
-            <div class="slider-dots-mobile">
-                <span class="dot active"></span>
-                <span class="dot"></span>
             </div>
         </section>
         <section class="denim-carousel-section">
@@ -673,6 +679,32 @@
                 <span class="toast-desc" id="toast-product-name">Product Name</span>
             </div>
         </div>
+    </div>
+    <!-- Mobile Bottom Navigation Bar -->
+    <div class="mobile-bottom-nav">
+        <a href="#" class="bottom-nav-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span>Shop</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <span>Search</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <span>Wishlist</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <span>Account</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <div class="bottom-cart-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h12v12a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V6z"></path><path d="M9 6V5a3 3 0 0 1 6 0v1"></path></svg>
+                <span class="cart-count">0</span>
+            </div>
+            <span>Cart</span>
+        </a>
     </div>
 
 </body>
